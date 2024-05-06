@@ -38,4 +38,10 @@ def Palestine():
 
     WestBankDictionary = eval(response.text)
 
-    return GazaDictionary, WestBankDictionary
+    AllPalestineDictionary = GazaDictionary.copy()
+
+    AllPalestineDictionary["Casualties"] += WestBankDictionary["Casualties"]
+
+    AllPalestineDictionary["Injured"] += WestBankDictionary["Injured"]
+
+    return GazaDictionary, WestBankDictionary, AllPalestineDictionary
