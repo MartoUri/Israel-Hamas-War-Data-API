@@ -32,7 +32,7 @@ def Palestine():
     
     text = get_text(html) 
 
-    data = text[2300 :4000]
+    data = text[1900 :2560]
 
     response = model.generate_content("I will send you some data, with that complete the following JSON and DO NOT send nothing but the JSON. Complete the JSON ONLY with information of Gaza. ONLY use integers. Only respond with a JSON file. This is the following JSON: {'Casualties':int, 'Injured':int, 'Missing':int}  The data is the following: " + data, stream=False)
 
