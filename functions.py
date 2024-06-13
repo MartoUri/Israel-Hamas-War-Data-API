@@ -6,7 +6,7 @@ import time
 
 
 
-genai.configure(api_key="YOUR_API_KEY")
+genai.configure(api_key="YOURAPIKEY")
 
 model = genai.GenerativeModel('gemini-1.0-pro-latest')
 

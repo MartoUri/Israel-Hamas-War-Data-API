@@ -1,0 +1,4 @@
+[console_scripts]
+inscript=inscriptis.cli.inscript:cli
+inscriptis-api=inscriptis.service.web:start
+
